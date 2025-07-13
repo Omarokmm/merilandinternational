@@ -51,6 +51,8 @@ export interface Translations {
   // About Section
   about: {
     title: string
+    description1: string
+    description2: string
     subtitle1: string
     subtitle2: string
     expertTeam: string
@@ -217,6 +219,8 @@ export const translations: Record<Language, Translations> = {
     },
     about: {
       title: 'عن شركتنا',
+      description1: 'تأسست ميريلاند العالمية عام 1999 في الكويت، ونمت لتصبح من الشركات الرائدة في مجال تصنيع وتوريد معدات المطابخ والمطاعم والمقاهي والمطابخ المركزية من الستانلس ستيل بجودة عالية.',
+      description2: 'نقدم حلولاً متكاملة تشمل التصميم، التصنيع، التركيب، وخدمة ما بعد البيع، مع التزامنا بأعلى معايير الجودة والابتكار وخدمة العملاء. نفخر بتنفيذ مئات المشاريع الناجحة في الكويت والخليج.',
       subtitle1: 'تأسست ميريلاند العالمية لتجهيزات الفنادق عام 1999 في الكويت، ونمت لتصبح من الشركات الرائدة في مجال تصنيع وتوريد معدات المطابخ والمطاعم والمقاهي والمطابخ المركزية.',
       subtitle2: 'نتميز بخبرة واسعة في تصميم وتنفيذ المشاريع الكبرى، مع التزامنا بأعلى معايير الجودة والابتكار وخدمة العملاء.',
       expertTeam: 'فريق محترف',
@@ -365,6 +369,8 @@ export const translations: Record<Language, Translations> = {
     },
     about: {
       title: 'About Our Company',
+      description1: 'Founded in 1999, Maryland International has grown to become a leading company in manufacturing and supplying kitchen, restaurant, cafe, and central kitchen equipment from high-quality stainless steel.',
+      description2: 'We provide integrated solutions including design, manufacturing, installation, and after-sales service, with our commitment to the highest standards of quality, innovation, and customer service. We are proud to have implemented hundreds of successful projects in Kuwait and the Gulf.',
       subtitle1: 'Founded in 2008, Meriland International has been at the forefront of global business consulting, helping companies navigate the complexities of international markets and achieve sustainable growth.',
       subtitle2: 'Our team of experienced professionals brings together expertise in international trade, strategic planning, market analysis, and digital transformation to provide comprehensive solutions that drive real business results.',
       expertTeam: 'Expert Team',

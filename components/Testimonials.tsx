@@ -4,10 +4,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Star, Quote } from 'lucide-react'
-import { useLanguage } from '../contexts/LanguageContext'
+
 
 const Testimonials = () => {
-  const { t, isRTL } = useLanguage()
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -100,7 +100,7 @@ const Testimonials = () => {
             What Our <span className="gradient-text">Clients Say</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Don't just take our word for it. Here's what our clients have to say about 
+            Don&apos;t just take our word for it. Here&apos;s what our clients have to say about 
             their experience working with Meriland International.
           </p>
         </motion.div>
@@ -112,7 +112,7 @@ const Testimonials = () => {
           animate={inView ? "visible" : "hidden"}
           className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
         >
-          {testimonials.map((testimonial, index) => (
+          {testimonials.map((testimonial) => (
             <motion.div
               key={testimonial.name}
               variants={itemVariants}
@@ -132,7 +132,7 @@ const Testimonials = () => {
 
               {/* Content */}
               <p className="text-gray-700 mb-6 leading-relaxed">
-                "{testimonial.content}"
+                &ldquo;{testimonial.content}&rdquo;
               </p>
 
               {/* Author */}
@@ -164,7 +164,7 @@ const Testimonials = () => {
               { number: '95%', label: 'Satisfaction Rate' },
               { number: '15+', label: 'Years Experience' },
               { number: '50+', label: 'Countries Served' }
-            ].map((stat, index) => (
+            ].map((stat) => (
               <div key={stat.label}>
                 <div className="text-4xl font-bold mb-2">{stat.number}</div>
                 <div className="text-lg opacity-90">{stat.label}</div>
@@ -184,7 +184,7 @@ const Testimonials = () => {
             Ready to Join Our Success Stories?
           </h3>
           <p className="text-xl text-gray-600 mb-8">
-            Let's discuss how we can help transform your business and achieve your global goals.
+            Let&apos;s discuss how we can help transform your business and achieve your global goals.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <button className="btn-primary">

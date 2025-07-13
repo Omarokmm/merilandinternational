@@ -1,7 +1,6 @@
 'use client'
 
 import React from 'react'
-import { motion } from 'framer-motion'
 import { 
   Phone, 
   Mail, 
@@ -13,10 +12,8 @@ import {
   ArrowUp
 } from 'lucide-react'
 import Link from 'next/link'
-import { useLanguage } from '../contexts/LanguageContext'
 
 const Footer = () => {
-  const { t, isRTL } = useLanguage()
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }

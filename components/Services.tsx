@@ -4,12 +4,6 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { 
-  Globe, 
-  TrendingUp, 
-  Users, 
-  Shield, 
-  BarChart3, 
-  Target,
   ArrowRight,
   CheckCircle,
   Utensils,
@@ -120,7 +114,7 @@ const Services = () => {
           animate={inView ? "visible" : "hidden"}
           className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 sm:gap-6 lg:gap-8"
         >
-          {services.map((service, index) => (
+          {services.map((service) => (
             <motion.div
               key={service.title}
               variants={itemVariants}

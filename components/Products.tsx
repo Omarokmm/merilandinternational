@@ -9,13 +9,9 @@ import {
   Star,
   ArrowRight,
   Package,
-  Utensils,
   Refrigerator,
   Coffee,
   Droplet,
-  Soup,
-  Layers,
-  CupSoda,
   ChefHat,
   Flame
 } from 'lucide-react'

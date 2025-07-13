@@ -14,7 +14,7 @@ import {
 import { useLanguage } from '../contexts/LanguageContext'
 
 const About = () => {
-  const { t, isRTL } = useLanguage()
+  const { t } = useLanguage()
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -62,13 +62,13 @@ const About = () => {
             transition={{ duration: 0.8 }}
           >
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6">
-              عن <span className="gradient-text">ميريلاند العالمية لتجهيزات الفنادق</span>
+              {t('about.title')}
             </h2>
             <p className="text-xl text-gray-600 mb-8 leading-relaxed">
-              تأسست ميريلاند العالمية عام 1999 في الكويت، ونمت لتصبح من الشركات الرائدة في مجال تصنيع وتوريد معدات المطابخ والمطاعم والمقاهي والمطابخ المركزية من الستانلس ستيل بجودة عالية.
+              {t('about.description1')}
             </p>
             <p className="text-lg text-gray-600 mb-8 leading-relaxed">
-              نقدم حلولاً متكاملة تشمل التصميم، التصنيع، التركيب، وخدمة ما بعد البيع، مع التزامنا بأعلى معايير الجودة والابتكار وخدمة العملاء. نفخر بتنفيذ مئات المشاريع الناجحة في الكويت والخليج.
+              {t('about.description2')}
             </p>
             <div className="mb-8">
               <div className="flex items-center space-x-3 mb-2">

@@ -11,10 +11,10 @@ import {
   ArrowRight,
   CheckCircle
 } from 'lucide-react'
-import { useLanguage } from '../contexts/LanguageContext'
+
 
 const Solutions = () => {
-  const { t, isRTL } = useLanguage()
+
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
@@ -176,7 +176,7 @@ const Solutions = () => {
           <div className="bg-gradient-to-r from-primary-600 to-accent-500 rounded-2xl p-12 text-white">
             <h3 className="text-3xl font-bold mb-4">Ready to Transform Your Business?</h3>
             <p className="text-xl mb-8 opacity-90">
-              Let's discuss how our solutions can help you achieve your business goals.
+              Let&apos;s discuss how our solutions can help you achieve your business goals.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <button className="bg-white text-primary-600 font-semibold py-3 px-8 rounded-lg hover:bg-gray-50 transition-colors group">

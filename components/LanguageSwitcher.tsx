@@ -6,7 +6,7 @@ import { Globe, ChevronDown } from 'lucide-react'
 import { useLanguage } from '../contexts/LanguageContext'
 
 const LanguageSwitcher = () => {
-  const { language, setLanguage, isRTL } = useLanguage()
+  const { language, setLanguage } = useLanguage()
   const [isOpen, setIsOpen] = React.useState(false)
 
   const languages = [
