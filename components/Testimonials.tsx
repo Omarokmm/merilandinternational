@@ -4,8 +4,10 @@ import React from 'react'
 import { motion } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { Star, Quote } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Testimonials = () => {
+  const { t, isRTL } = useLanguage()
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1

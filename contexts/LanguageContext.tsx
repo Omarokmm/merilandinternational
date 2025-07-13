@@ -15,7 +15,14 @@ const LanguageContext = createContext<LanguageContextType | undefined>(undefined
 export const useLanguage = () => {
   const context = useContext(LanguageContext)
   if (context === undefined) {
-    throw new Error('useLanguage must be used within a LanguageProvider')
+    console.warn('useLanguage must be used within a LanguageProvider')
+    // Return a default context to prevent crashes
+    return {
+      language: 'ar' as Language,
+      setLanguage: () => {},
+      t: (key: string) => key,
+      isRTL: true
+    }
   }
   return context
 }

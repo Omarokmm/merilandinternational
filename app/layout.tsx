@@ -8,21 +8,27 @@ const inter = Inter({ subsets: ['latin'] })
 
 export const metadata: Metadata = {
   title: {
-    default: 'Meriland International - Your Trusted Partner in Global Business Solutions',
-    template: '%s | Meriland International'
+    default: 'ميريلاند العالمية - تجهيزات الفنادق والمطاعم والمقاهي',
+    template: '%s | ميريلاند العالمية'
   },
-  description: 'Meriland International is a leading global business consulting firm specializing in international trade, market expansion, and strategic business solutions. Transform your business with our expert guidance.',
+  description: 'ميريلاند العالمية لتجهيزات الفنادق والمطاعم والمقاهي والمطابخ المركزية - خبرة في تصنيع وتوريد معدات المطابخ والمطاعم من الستانلس ستيل بجودة عالية وخدمة احترافية في الكويت.',
   keywords: [
-    'Meriland International',
-    'business consulting',
-    'international trade',
-    'market expansion',
-    'global business solutions',
-    'strategic consulting',
-    'business development',
-    'international business',
-    'trade consulting',
-    'business strategy'
+    'ميريلاند العالمية',
+    'تجهيزات فنادق',
+    'معدات مطاعم',
+    'معدات مقاهي',
+    'مطابخ مركزية',
+    'ستانلس ستيل',
+    'معدات مطابخ',
+    'أفران صناعية',
+    'ثلاجات تجارية',
+    'ماكينات قهوة',
+    'معدات غسيل',
+    'شوايات غاز',
+    'Kuwait',
+    'Kitchen Equipment',
+    'Restaurant Supplies',
+    'Hotel Equipment'
   ],
   authors: [{ name: 'Meriland International' }],
   creator: 'Meriland International',
@@ -32,30 +38,30 @@ export const metadata: Metadata = {
     address: false,
     telephone: false,
   },
-  metadataBase: new URL('https://merilandinternational.com'),
+  metadataBase: new URL('https://merilandinternational.vercel.app'),
   alternates: {
     canonical: '/',
   },
   openGraph: {
     type: 'website',
-    locale: 'en_US',
-    url: 'https://merilandinternational.com',
-    title: 'Meriland International - Your Trusted Partner in Global Business Solutions',
-    description: 'Transform your business with Meriland International\'s expert global business consulting services. Specializing in international trade, market expansion, and strategic solutions.',
-    siteName: 'Meriland International',
+    locale: 'ar_KW',
+    url: 'https://merilandinternational.vercel.app',
+    title: 'ميريلاند العالمية - تجهيزات الفنادق والمطاعم والمقاهي',
+    description: 'ميريلاند العالمية لتجهيزات الفنادق والمطاعم والمقاهي والمطابخ المركزية - خبرة في تصنيع وتوريد معدات المطابخ والمطاعم من الستانلس ستيل بجودة عالية وخدمة احترافية في الكويت.',
+    siteName: 'ميريلاند العالمية',
     images: [
       {
         url: '/og-image.jpg',
         width: 1200,
         height: 630,
-        alt: 'Meriland International - Global Business Solutions',
+        alt: 'ميريلاند العالمية - تجهيزات الفنادق والمطاعم والمقاهي',
       },
     ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Meriland International - Your Trusted Partner in Global Business Solutions',
-    description: 'Transform your business with Meriland International\'s expert global business consulting services.',
+    title: 'ميريلاند العالمية - تجهيزات الفنادق والمطاعم والمقاهي',
+    description: 'ميريلاند العالمية لتجهيزات الفنادق والمطاعم والمقاهي والمطابخ المركزية - خبرة في تصنيع وتوريد معدات المطابخ والمطاعم من الستانلس ستيل بجودة عالية وخدمة احترافية في الكويت.',
     images: ['/og-image.jpg'],
   },
   robots: {
@@ -97,18 +103,20 @@ export default function RootLayout({
               "@context": "https://schema.org",
               "@type": "Organization",
               "name": "Meriland International",
-              "url": "https://merilandinternational.com",
-              "logo": "https://merilandinternational.com/logo.png",
-              "description": "Leading global business consulting firm specializing in international trade and strategic business solutions",
+              "url": "https://merilandinternational.vercel.app",
+              "logo": "https://merilandinternational.vercel.app/logo.png",
+              "description": "Leading kitchen and restaurant equipment supplier specializing in stainless steel equipment for hotels, restaurants, cafes and central kitchens in Kuwait",
               "address": {
                 "@type": "PostalAddress",
-                "addressCountry": "US"
+                "addressCountry": "KW",
+                "addressLocality": "Shuwaikh Industrial",
+                "addressRegion": "Kuwait"
               },
               "contactPoint": {
                 "@type": "ContactPoint",
-                "telephone": "+1-555-123-4567",
+                "telephone": "+965-99348402",
                 "contactType": "customer service",
-                "email": "info@merilandinternational.com"
+                "email": "info@maryland-intl.com"
               },
               "sameAs": [
                 "https://linkedin.com/company/meriland-international",

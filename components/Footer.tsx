@@ -13,8 +13,10 @@ import {
   ArrowUp
 } from 'lucide-react'
 import Link from 'next/link'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const Footer = () => {
+  const { t, isRTL } = useLanguage()
   const scrollToTop = () => {
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }

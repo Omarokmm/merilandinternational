@@ -11,8 +11,10 @@ import {
   CheckCircle,
   ArrowRight
 } from 'lucide-react'
+import { useLanguage } from '../contexts/LanguageContext'
 
 const About = () => {
+  const { t, isRTL } = useLanguage()
   const [ref, inView] = useInView({
     triggerOnce: true,
     threshold: 0.1
