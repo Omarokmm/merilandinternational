@@ -19,7 +19,7 @@ const About = () => {
     triggerOnce: true,
     threshold: 0.1
   })
-
+//  this
   const values = [
     {
       icon: Target,
